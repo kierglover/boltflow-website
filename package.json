@@ -4,7 +4,8 @@
   "description": "A simple Grunt build system to optimise sites exported with Webflow.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "boltflow": "grunt boltflow"
   },
   "repository": {
     "type": "git",

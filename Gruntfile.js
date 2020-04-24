@@ -31,7 +31,7 @@ module.exports = function(grunt) {
      uglify: {
           my_target: {
                files: {
-                    'build/js/scripts.min.js': ['assets/js/scripts.js']
+                    'dist/js/scripts.min.js': ['assets/js/scripts.js']
                }
           }
      },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         cssnano: {
             dist: {
                 files: {
-                    'build/css/main.min.css': 'assets/css/main.css'
+                    'dist/css/main.min.css': 'assets/css/main.css'
                 }
             }
 
@@ -59,5 +59,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-cssnano');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('boltflow', ['concat', 'uglify', 'cssnano']);
     grunt.registerTask('default', ['watch']);
 };
