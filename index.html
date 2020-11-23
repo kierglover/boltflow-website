@@ -125,10 +125,28 @@
   <div class="wide-wrapper last-wrapper div-block">
     <div class="tag-wrapper">
       <div id="contact" class="big-article-title-wrapper">
-        <div class="form-block w-form">
+        <form name="boltflow-contact-form" method="POST" data-netlify="true">
+          <div class="tagline tagline-promo-40" style="text-align: center;">Contact</div>
+          <h2 class="signup-headline">Get in touch.</h2>
+          <p>
+            <label>Your Name: <input class="text-field" type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input class="text-field" type="email" name="email" /></label>
+          </p>
+          <p>
+          </p>
+          <p>
+            <button class="button violet-button w-button" type="submit">Send</button>
+          </p>
+        </form>
+        <!-- <div class="form-block w-form">
           <form name="boltflow-contact-form" method="POST" data-netlify="true" class="form">
             <div class="tagline tagline-promo-40">Contact</div>
-            <h2 class="signup-headline">Get in touch.</h2><label for="name">Name</label><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name" id="name"><label for="email">Email</label><input type="text" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email" id="email" required="">
+            <h2 class="signup-headline">Get in touch.</h2>
+            <label for="name">Name</label>
+            <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name" id="name">
+            <label for="email">Email</label><input type="text" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email" id="email" required="">
             <div class="form-submit-wrapper"><button type="submit" data-wait="Please wait..." class="button violet-button w-button"></div>
           </form>
           <div class="success-message w-form-done"><img src="images/big-check2x.png" width="200" alt="">
@@ -137,7 +155,7 @@
           <div class="error-message w-form-fail">
             <div class="error-message-text">Oops! Something went terribly wrong.</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
